@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :student_days
   resources :students
   resources :cohort_days
