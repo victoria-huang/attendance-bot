@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2018_10_04_181213) do
   end
 
   create_table "days", force: :cascade do |t|
-    t.string "date"
+    t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
