@@ -4,10 +4,6 @@ class StudentDaysController < ApplicationController
     render json: @student_days
   end
 
-  def new
-    @student_day = StudentDay.new
-  end
-
   def create
     @student_day = StudentDay.new(student_day_params)
     time_in = DateTime.now
