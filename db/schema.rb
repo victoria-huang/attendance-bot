@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2018_10_04_181213) do
   create_table "cohorts", force: :cascade do |t|
     t.string "nickname"
     t.string "name"
+    t.integer "time_offset"
     t.bigint "campus_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -69,6 +70,7 @@ ActiveRecord::Schema.define(version: 2018_10_04_181213) do
   create_table "students", force: :cascade do |t|
     t.string "name"
     t.string "slack_id"
+    t.string "image_url"
     t.bigint "cohort_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
