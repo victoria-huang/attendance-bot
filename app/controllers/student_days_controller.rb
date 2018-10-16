@@ -16,8 +16,6 @@ class StudentDaysController < ApplicationController
     end
 
     @student_day.time_in = time_in
-
-    byebug
     @student_day.save
 
     render json: @student_day
